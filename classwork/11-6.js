@@ -34,3 +34,4 @@ console.log(c)
 
 //
 console.log(5&2)
+console.log(5|2)
