@@ -74,7 +74,7 @@ console.log(result)  // subString method is similar to slice method
 
 // 3. substr method
 var result = date.substr(4, 3)
-console.log(result)  // Second Parameter takes the length of the string to be extracted
+console.log("result: " +  result)  // Second Parameter takes the length of the string to be extracted
 
 
 
