@@ -32,7 +32,7 @@ var name = new String("Ayush")
 // String comparisions are case sensitive
 var string1 = "Ayush"
 var string2 = "ayush"
-console.log(string1==string2)
+console.log(string1 == string2)
 
 // String convert to uppercase and lowercase
 var name = "Ayush"
@@ -58,7 +58,7 @@ console.log(date)
 console.log(date)
 // 1. slice method 
 
-var result = date.slice(4,7)   // End index value should be greater by 1 than the real value
+var result = date.slice(4, 7)   // End index value should be greater by 1 than the real value
 console.log(result)
 // Slice method parameter variations
 var result = date.slice(4)
@@ -69,12 +69,12 @@ console.log(result)
 
 
 // 2. SubString method
-var result = date.substring(4,7)
+var result = date.substring(4, 7)
 console.log(result)  // subString method is similar to slice method
 
 // 3. substr method
 var result = date.substr(4, 3)
-console.log(result)  // Second Parameter takes the length of the string to be extracted
+console.log(result)  // The Second Parameter takes the length of the string to be extracted.
 
 
 
