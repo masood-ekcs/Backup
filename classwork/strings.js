@@ -77,15 +77,44 @@ var result = date.substr(4, 3)
 console.log("result: " + result)  // Second Parameter takes the length of the string to be extracted
 
 
+// Split Method
+var info = "My name is Ayush Addhyan"
+var data = info.split(" ")
+console.log(data[3])
+var csv = "name, class, age"
+var words = csv.split(",")
+console.log(words)
 
-//created a backup repo
 
+//Trim Method    - This method is used to remove speces from end and start of the string 
+var data = " kayush4789@gmail.com               "
+var result = data.trim();
+console.log(data)
 
+// Searching 
+// 1. Includes method returns true or false
+var data = "My name is Ayush Addhhyan. I am a SDE at Wells"
+var result = data.includes("Wells")
+console.log(result)
 
+// 2. IndexOf method returns index of the found element or returns -1 if not found
+var data = "My name is Ayush Addhhyan. I am a SDE at Wells. Wells in a financial Intitution in USA"
+var result = data.indexOf("Wells")
+console.log(result)
 
+//3. lastIndexOf method returns last occurance index of the founf element or returns -1 if not found.
+var data = "My name is Ayush Addhhyan. I am a SDE at Wells. Wells in a financial Intitution in USA"
+var result = data.lastIndexOf("Wells")
+console.log(result)
 
-
-
+// Replace method
+var info = "Hello I am based in Kolkata"
+var result = info.replace("Kolkata", "Delhi")
+console.log(result)
+// Global Replacement
+var info = "Hello I am based in Kolkata. Kolkata is a nice city."
+var result = info.replace(/Kolkata/g, "Delhi")
+console.log(result)
 
 
 
