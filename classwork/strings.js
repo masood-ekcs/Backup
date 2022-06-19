@@ -111,10 +111,32 @@ console.log(result)
 var info = "Hello I am based in Kolkata"
 var result = info.replace("Kolkata", "Delhi")
 console.log(result)
+
 // Global Replacement
 var info = "Hello I am based in Kolkata. Kolkata is a nice city."
 var result = info.replace(/Kolkata/g, "Delhi")
 console.log(result)
 
+
+
+
+
+var sen = "Hello my name is Ayush Addhyan"
+var isA = sen.includes("a")
+var isE = sen.includes("e")
+var isI = sen.includes("i")
+var isO = sen.includes("o")
+var isU = sen.includes("u")
+
+
+
+if(isA==true && isE==true && isO==true && isI==true && isU==true)
+{
+    console.log("True")
+}
+else
+{
+    console.log("False")
+}
 
 
