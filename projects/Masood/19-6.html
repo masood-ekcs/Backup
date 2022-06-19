@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Word Count</title>
+</head>
+
+<body>
+    <input type="text" id="inputtext"><button onclick="count2()">Count Words</button>
+    <script>
+        //function to count Word count from the input field.
+        function count1() {
+            var x = document.getElementById("inputtext").value
+            var xc = x.split(" ")
+            var xc = xc.length
+            document.write(xc)
+        }
+
+        //function to count vowels from the input field.
+        function count2() {
+            var x = document.getElementById("inputtext").value
+            var xa = x.includes("a")
+            var xe = x.includes("e")
+            var xi = x.includes("i")
+            var xo = x.includes("o")
+            var xu = x.includes("u")
+
+            //if (xa == true && xe == true && xi == true && xo == true && xu == true) {
+            if (xa && xe && xi && xo && xu) {
+                document.write("Perfect! Your name is Unique")
+            }
+            else {
+                document.write("Your name doesn't contain all the Vowels")
+            }
+        }
+
+
+    </script>
+</body>
+
+</html>
