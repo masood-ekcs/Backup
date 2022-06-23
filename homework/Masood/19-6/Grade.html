@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>School Grades</title>
+</head>
+
+<body>
+    <h3>Your Grades!</h3>
+    Enter your Marks : <input id="yourMarks">
+    <br><br>
+    <button onclick="calculate()">Calculate Grades</button>
+    <br>
+    <br>
+    <strong>
+        <div id="calc"></div>
+        <div id="print"></div>
+    </strong>
+    <script>
+        function calculate() {
+            var marks = document.getElementById("yourMarks").value
+            var marks1 = parseFloat(marks)
+
+            document.getElementById("calc").innerHTML = "Your Marks are : " + marks1
+
+            if (marks1 < 30) {
+                document.getElementById("print").innerHTML = "Your Grades are : FF! <br>You got to be serious!"
+            }
+            else if (marks1 >= 30 && marks1 < 40) {
+                document.getElementById("print").innerHTML = "Your Grades are : DD"
+            }
+            else if (marks1 >= 40 && marks1 < 50) {
+                document.getElementById("print").innerHTML = "Your Grades are : CD"
+            }
+            else if (marks1 >= 50 && marks1 < 60) {
+                document.getElementById("print").innerHTML = "Your Grades are : CC"
+            }
+            else if (marks1 >= 60 && marks1 < 70) {
+                document.getElementById("print").innerHTML = "Your Grades are : BC"
+            }
+            else if (marks1 >= 70 && marks1 < 80) {
+                document.getElementById("print").innerHTML = "Your Grades are : BB"
+            }
+            else if (marks1 >= 80 && marks1 < 90) {
+                document.getElementById("print").innerHTML = "Your Grades are : AB"
+            }
+            else if (marks1 > 90) {
+                document.getElementById("print").innerHTML = "Your Grades are : AA"
+            }
+            else {
+                document.getElementById("print").innerHTML = "You have not entered your Marks"
+            }
+
+
+        }
+
+    </script>
+</body>
+
+</html>
