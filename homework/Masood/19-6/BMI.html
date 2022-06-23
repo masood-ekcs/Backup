@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI</title>
+</head>
+
+<body>
+    <h3>Body Mass Index Interpretation</h3>
+    Enter your Weight in KG : <input id="kg">
+    <br>
+    Enter your Height in Meter : <input id="meter">
+    <br><br>
+    <button onclick="calculate()">Calculate BMI</button>
+    <br>
+    <br>
+    <strong>
+        <div id="calc"></div>
+        <div id="print"></div>
+    </strong>
+    <script>
+        function calculate() {
+            var kg1 = document.getElementById("kg").value
+            var meter1 = document.getElementById("meter").value
+            var k1 = parseFloat(kg1)
+            var m1 = parseFloat(meter1)
+            var bmi = k1 / (m1 * m1)
+
+            document.getElementById("calc").innerHTML = "Your BMI is : " + bmi
+
+            if (bmi < 18.5) {
+                document.getElementById("print").innerHTML = "You are Below Normal Weight"
+                //     alert("You are Below Normal Weight")
+            }
+            // elseif(bmi >= 18.5 && bmi < 25){
+            //     document.getElementById("print").innerHTML = "You are Normal Weight"
+            //     alert("You are Normal Weight")
+            // }
+            // elseif(bmi >= 25 && bmi < 30){
+            //     document.getElementById("print").innerHTML = "You are Overweight"
+            //     alert("You are Overweight")
+            // }
+            // elseif(bmi >= 30 && bmi < 35){
+            //     document.getElementById("print").innerHTML = "You are Class I Obesity"
+            //     alert("You are Class I Obesity")
+            // }
+            // elseif(bmi >= 35 && bmi < 40){
+            //     document.getElementById("print").innerHTML = "You are Class II Obesity"
+            //     alert("You are Class II Obesity")
+            // }
+            // elseif(bmi >= 40){
+            //     document.getElementById("print").innerHTML = "You are Class III Obesity"
+            //     alert("You are Class III Obesity")
+            // }
+
+        }
+
+    </script>
+</body>
+
+</html>

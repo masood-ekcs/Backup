@@ -3,9 +3,9 @@ var a = 400
 var b = 9999999
 var c = a + b
 console.log(c)
-var d = 5/2
+var d = 5 / 2
 console.log(d)
-var e = a**b
+var e = a ** b
 console.log(e)
 console.log(5e2)
 console.log(2e1)
@@ -33,5 +33,5 @@ var c = a++
 console.log(c)
 
 //
-console.log(5&2)
-console.log(5|2)
+console.log(5 & 2)
+console.log(5 | 2)

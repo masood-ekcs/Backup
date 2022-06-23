@@ -1,4 +1,4 @@
-/* left shift opeartor 
+ /* left shift opeartor 
 console.log(1<<2)
 
 m<<k

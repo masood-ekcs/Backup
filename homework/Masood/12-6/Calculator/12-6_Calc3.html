@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Simple Calculator</title>
+    <title>Simple Calculator3</title>
 </head>
 
 <body>
@@ -17,6 +17,9 @@
     <button onclick="sub()">-</button>
     <button onclick="mul()">x</button>
     <button onclick="divide()">/</button>
+    <br>
+    <br>
+    <div id="calc"></div>
 
     <script>
         function add() {
@@ -25,7 +28,8 @@
             var n1 = parseInt(number1)
             var n2 = parseInt(number2)
             var result = n1 + n2
-            document.write("The Addition value is : " + result)
+            //document.write("The Addition value is : " + result)
+            document.getElementById("calc").innerHTML = "The Addition value is : " + result
         }
 
         function sub() {
@@ -34,7 +38,7 @@
             var n1 = parseInt(number1)
             var n2 = parseInt(number2)
             var result = n1 - n2
-            document.write("The Subtracted value is : " + result)
+            document.getElementById("calc").innerHTML = "The Subtracted value is : " + result
         }
 
         function mul() {
@@ -43,7 +47,7 @@
             var n1 = parseInt(number1)
             var n2 = parseInt(number2)
             var result = n1 * n2
-            document.write("The Multiplied value is : " + result)
+            document.getElementById("calc").innerHTML = "The Multiplied value is : " + result
         }
 
         function divide() {
@@ -52,7 +56,7 @@
             var n1 = parseInt(number1)
             var n2 = parseInt(number2)
             var result = n1 / n2
-            document.write("The Division value is : " + result)
+            document.getElementById("calc").innerHTML = "The Division value is : " + result
         }
 
     </script>
