@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,23 +12,21 @@
         }
     </style>
 </head>
+
 <body id="bd">
     <button onclick="changeColor()">Change Color</button>
     <script>
 
-        function changeColor()
-        {
-                var body = document.getElementById("bd")
-                var red = Math.floor(Math.random()*256)
-                var blue = Math.floor(Math.random()*256)
-                var green = Math.floor(Math.random()*256)
-                 var final_color = "rgb(" + red.toString() + "," + green.toString() + "," + blue.toString() + ")"
-                 body.style.backgroundColor = final_color
+        function changeColor() {
+            var body = document.getElementById("bd")
+            var red = Math.floor(Math.random() * 256)
+            var blue = Math.floor(Math.random() * 256)
+            var green = Math.floor(Math.random() * 256)
+            var final_color = "rgb(" + red.toString() + "," + green.toString() + "," + blue.toString() + ")"
+            body.style.backgroundColor = final_color
 
         }
-
-   
-
     </script>
 </body>
+
 </html>

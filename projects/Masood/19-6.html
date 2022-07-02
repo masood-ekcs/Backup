@@ -9,19 +9,21 @@
 </head>
 
 <body>
-    <input type="text" id="inputtext"><button onclick="count2()">Count Words</button>
+    <input type="text" id="inputtext1"><button onclick="count1()">Count Words</button><br>
+    <input type="text" id="inputtext2"><button onclick="count2()">Check Vowels</button>
     <script>
         //function to count Word count from the input field.
         function count1() {
-            var x = document.getElementById("inputtext").value
+            var x = document.getElementById("inputtext1").value
             var xc = x.split(" ")
-            var xc = xc.length
-            document.write(xc)
+            var xl = xc.length
+            console.log(xc)
+            document.write(xl)
         }
 
-        //function to count vowels from the input field.
+        //function to check all the vowels in the input field.
         function count2() {
-            var x = document.getElementById("inputtext").value
+            var x = document.getElementById("inputtext2").value
             var xa = x.includes("a")
             var xe = x.includes("e")
             var xi = x.includes("i")

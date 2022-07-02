@@ -10,17 +10,17 @@
 
 <body>
     <h3>Body Mass Index Interpretation</h3>
-    Enter your Weight in KG : <input id="kg">
+    Enter your Weight in KG : <br><input id="kg">
     <br>
-    Enter your Height in Meter : <input id="meter">
+    Enter your Height in Meter : <br><input id="meter">
     <br><br>
     <button onclick="calculate()">Calculate BMI</button>
     <br>
     <br>
-    <strong>
-        <div id="calc"></div>
-        <div id="print"></div>
-    </strong>
+
+    Hello<div id="calc" style="display:inline"></div>
+    <div id="print"></div>
+
     <script>
         function calculate() {
             var kg1 = document.getElementById("kg").value
@@ -29,14 +29,15 @@
             var m1 = parseFloat(meter1)
             var bmi = k1 / (m1 * m1)
 
-            document.getElementById("calc").innerHTML = "Your BMI is : " + bmi
+            document.getElementById("calc").innerHTML = "Your BMI is : <b style='color:white; background-color:green'>" + bmi + "</b>"
 
             if (bmi < 18.5) {
-                document.getElementById("print").innerHTML = "You are Below Normal Weight"
+                document.getElementById("print").innerHTML = "You are <b>Below Normal Weight</b>"
                 //     alert("You are Below Normal Weight")
             }
             else if (bmi >= 18.5 && bmi < 25) {
                 document.getElementById("print").innerHTML = "You are Normal Weight"
+                //console.log("You are Normal Weight")
             }
             else if (bmi >= 25 && bmi < 30) {
                 document.getElementById("print").innerHTML = "You are Overweight"
@@ -49,6 +50,9 @@
             }
             else if (bmi >= 40) {
                 document.getElementById("print").innerHTML = "You are Class III Obesity <br> <i> bhai kuchh mehnat kar le </i>"
+            }
+            else {
+                document.getElementById("print").innerHTML = "<i>You have not entered the details!</i>"
             }
 
         }

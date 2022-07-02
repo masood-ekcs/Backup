@@ -1,7 +1,10 @@
- /* left shift opeartor 
-console.log(1<<2)
+/*
+//left shift opeartor 
+console.log(1 >> 2)
 
-m<<k
+
+m << k
+
 
 Add k zeros in binary representation of m
 If it equivalent to m x 2^k
@@ -53,14 +56,13 @@ else
 }
 
 
-*/
 
+*/
 
 var a = "Ayush"
 var b = "male"
 
-if(a=="Ayush" && b=="male")
-{
+if (a == "Ayush" && b == "male") {
 
 
 }

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RPS Game</title>
+</head>
+
+<body>
+    <h2>Rock Paper Scissor</h2>
+    <i><strong style="color:green">Click the button to play…</strong></i>
+    <br><br>
+    <button onclick="rock()">Rock</button>
+    <button onclick="paper()">Paper</button>
+    <button onclick="scissor()">Scissor</button>
+    <br>
+    <br>
+    <div id="myPrint"></div>
+    <div id="computerChoice"></div>
+    <div id="computerPrint"></div>
+
+    <script>
+        // 1 = Rock
+        // 2 = Paper
+        // 3 = Scissor
+
+        function rock() {
+            var computerChoice = parseInt(Math.floor(Math.random() * (3 - 1 + 1)) + 1);
+            var myChoice = 1;
+            console.log(computerChoice);
+            console.log(myChoice);
+
+            if (computerChoice == 1 && myChoice) {
+                document.getElementById("myPrint").innerHTML = "<b>Draw!</b>"
+                document.getElementById("computerPrint").innerHTML = "<i>Your choices are the same, play again!</i>"
+            }
+            else if (computerChoice == 2 && myChoice) {
+                document.getElementById("myPrint").innerHTML = "<b>Computer won!</b>"
+                document.getElementById("computerPrint").innerHTML = "Computer choice was <span style='color:red'> Paper!</span>"
+            }
+            else if (computerChoice == 3 && myChoice) {
+                document.getElementById("myPrint").innerHTML = "<b>You won!</b>"
+                document.getElementById("computerPrint").innerHTML = "Computer choice was <span style='color:red'> Scissor!</span>"
+            }
+        }
+
+        function paper() {
+            var computerChoice = parseInt(Math.floor(Math.random() * (3 - 1 + 1)) + 1);
+            var myChoice = 2;
+            console.log(computerChoice);
+            console.log(myChoice);
+
+            if (computerChoice == 2 && myChoice) {
+                document.getElementById("myPrint").innerHTML = "<b>Draw!</b>"
+                document.getElementById("computerPrint").innerHTML = "Your choices are the same, play again!"
+            }
+            else if (computerChoice == 1 && myChoice) {
+                document.getElementById("myPrint").innerHTML = "<b>You won!</b>"
+                document.getElementById("computerPrint").innerHTML = "Computer choice was <style='color:red'> Rock!"
+            }
+            else if (computerChoice == 3 && myChoice) {
+                document.getElementById("myPrint").innerHTML = "<b>Computer won!</b>"
+                document.getElementById("computerPrint").innerHTML = "Computer choice was <style='color:red'> Scissor!"
+            }
+        }
+
+        function scissor() {
+            var computerChoice = parseInt(Math.floor(Math.random() * (3 - 1 + 1)) + 1);
+            var myChoice = 3;
+            console.log(computerChoice);
+            console.log(myChoice);
+
+            if (computerChoice == 3 && myChoice) {
+                document.getElementById("myPrint").innerHTML = "<b>Draw!</b>"
+                document.getElementById("computerPrint").innerHTML = "Your choices are the same, play again!"
+            }
+            else if (computerChoice == 1 && myChoice) {
+                document.getElementById("myPrint").innerHTML = "<b>Computer won!</b>"
+                document.getElementById("computerPrint").innerHTML = "Computer choice was <style='color:red'> Rock!"
+            }
+            else if (computerChoice == 2 && myChoice) {
+                document.getElementById("myPrint").innerHTML = "<b>You won!</b>"
+                document.getElementById("computerPrint").innerHTML = "Computer choice was <style='color:green'>Paper!</b>"
+            }
+        }
+
+
+
+    </script>
+</body>
+
+</html>

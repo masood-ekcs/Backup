@@ -17,7 +17,7 @@ console.log(Math.min(2,4,1,6,10)) //Returns minimum value
       // -4 -3 -2 -1 0 1 2 3 4 5
 
 
-*/     
+*/
 
 
 
@@ -29,5 +29,11 @@ console.log(Math.min(2,4,1,6,10)) //Returns minimum value
        0*10<= x <= 0.9999999*10
        0<= x  <= 9.9999
 */
+
+//Formula to find a random number between max and min number both inclusive
+//Math.floor(Math.random() * (max - min + 1)) + min
+var randBetween = Math.floor(Math.random() * (30 - 10 + 1)) + 10
+console.log(randBetween)
+
 
 
