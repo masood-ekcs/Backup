@@ -19,6 +19,7 @@ console.log(sent)
 */
 
 
+
 // How can we create a string variable
 
 var name = "Ayush"
