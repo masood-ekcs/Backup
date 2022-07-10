@@ -27,6 +27,27 @@ for(var i=2; i<num; i++){
         isPrime = false
     }}
     if(isPrime = true){
-        console
-    } 
+        console.log("its prime number")
+    }
+ //Prime Number   
+    var count = 0;
+
+    for(var num=3;num<=100;num++){
+              var isPrime = 1 //assuming prime is true
+              for(var i =2; i<num; i++)
+                {
+                  if(num%i==0)
+                  {
+                    isPrime = 0; // if false
+                   
+                  }
+                }
+          if(isPrime)
+          {  count++;
+            console.log(num)
+            
+          }
+      
+    }
+    console.log(count)
 
