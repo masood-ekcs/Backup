@@ -21,7 +21,6 @@
 // }
 // console.log(count)
 
-
 // var num = 2468513
 // count = 0
 // for(; num>0; ){
@@ -44,27 +43,22 @@
 //   console.log(parseInt(ans))
 
 //Print even factors of a given number
-var num = 1024
-for(var i=1; i<=num; i++){
-  if (num%i==0 &&i%2==0){ 
-      console.log(i)
-     
-   
+var num = 1024;
+for (var i = 1; i <= num; i++) {
+  if (num % i == 0 && i % 2 == 0) {
+    console.log(i);
   }
 }
 //console.log(factorCount)
 //console.log(evenFactor)
 
-
-console.log("\n\n\n")
+console.log("\n\n\n");
 //-------------------------------------------------------------//
 // Print number of factors that are multiple of 3
-var num = 12345
-var count = 0
-  for(i=1;i<=num;i++){
-     if(num%i==0 && i%3==0)
-     {
-       console.log(i);
-     }
-  
+var num = 12345;
+var count = 0;
+for (i = 1; i <= num; i++) {
+  if (num % i == 0 && i % 3 == 0) {
+    console.log(i);
   }
+}

@@ -19,7 +19,6 @@ for (; i <= 20; i++) {
     }
 } */
 
-
 //Print all the factors of a number
 /*
 var num = 203
@@ -43,19 +42,18 @@ for (var i = 1; i <= num; i++) {
 console.log("Total factors for " + num + " = " + factorCount)
  */
 
-
 // create a variable and count the length of its digit
 
-var num = 520000000000000000000
-var count = 0
-for (; num > 0;) {
-    // we just need to check if the num value is not equal to zero
-    // run the code until num is greater than 0
-    // once the num becomes zero, the loop will stop
-    num = Math.floor(num / 10)
-    count++; //
+var num = 520000000000000000000;
+var count = 0;
+for (; num > 0; ) {
+  // we just need to check if the num value is not equal to zero
+  // run the code until num is greater than 0
+  // once the num becomes zero, the loop will stop
+  num = Math.floor(num / 10);
+  count++; //
 }
-console.log(count)
+console.log(count);
 
 /* 
 var num = 520
@@ -66,24 +64,22 @@ for (; num > 0;) {
 */
 
 //Print even factors of a given number
-var num = 1024
+var num = 1024;
 for (var i = 1; i <= num; i++) {
-    if (num % i == 0 && i % 2 == 0) {
-        console.log(i)
-    }
+  if (num % i == 0 && i % 2 == 0) {
+    console.log(i);
+  }
 }
 //console.log(factorCount)
 //console.log(evenFactor)
 
-
-console.log("\n\n\n")
+console.log("\n\n\n");
 //-------------------------------------------------------------//
 // Print number of factors that are multiple of 3
-var num = 12345
-var count = 0
+var num = 12345;
+var count = 0;
 for (i = 1; i <= num; i++) {
-    if (num % i == 0 && i % 3 == 0) {
-        console.log(i);
-    }
-
+  if (num % i == 0 && i % 3 == 0) {
+    console.log(i);
+  }
 }

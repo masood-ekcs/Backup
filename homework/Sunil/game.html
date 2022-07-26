@@ -1,93 +1,121 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Game</title>
     <style>
-        .bx{text-align: center;width: 600px;margin: auto;border: 1px solid #303030; border-radius: 10px; padding: 20px;}
-    button{padding: 10px; font-size: 18px;}
-    #st{background: rgb(225, 255, 0);}
-    #pp{background: rgb(128, 128, 204);}
-    #sz{background: rgb(0, 255, 85);}
-    #display{font-size: 30px;font-weight: bold;padding: 100px;}
-    #rt{padding: 10px;}
+      .bx {
+        text-align: center;
+        width: 600px;
+        margin: auto;
+        border: 1px solid #303030;
+        border-radius: 10px;
+        padding: 20px;
+      }
+      button {
+        padding: 10px;
+        font-size: 18px;
+      }
+      #st {
+        background: rgb(225, 255, 0);
+      }
+      #pp {
+        background: rgb(128, 128, 204);
+      }
+      #sz {
+        background: rgb(0, 255, 85);
+      }
+      #display {
+        font-size: 30px;
+        font-weight: bold;
+        padding: 100px;
+      }
+      #rt {
+        padding: 10px;
+      }
     </style>
-</head>
+  </head>
 
-<body>
-<div class="bx">    
-<p id="display">Play</p>
-<h2 id="rt">Result : <span id="result">?</span></h2>
-<button id="st" onclick="stone()">Stone</button>
-<button id="pp" onclick="paper()">Paper</button>
-<button id="sz" onclick="sizeer()">Sizeer</button>
-</div>
-</body>
-<script>
-    function stone(){
-var stone = 1
-var sys = Math.floor(Math.random()*(3)+1)
-if (stone == sys){
-document.getElementById("display").innerHTML = "Stone"
-document.getElementById("display").style.backgroundColor = "rgb(225, 255, 0)";
-document.getElementById("rt").style.backgroundColor = "white";
-document.getElementById("result").innerHTML = "Try Again"
-} else if (sys > stone && sys < 3){
-document.getElementById("display").innerHTML = "Paper"
-document.getElementById("display").style.backgroundColor = "rgb(128, 128, 204)";
-document.getElementById("rt").style.backgroundColor = "red";
-document.getElementById("result").innerHTML = "System Win"
-} else {
-document.getElementById("display").innerHTML = "Sizeer"
-document.getElementById("display").style.backgroundColor = "rgb(0, 255, 85)";
-document.getElementById("rt").style.backgroundColor = "green";
-document.getElementById("result").innerHTML = "You Win"
-}
-}
-function paper(){
-var paper = 2
-var sys = Math.floor(Math.random()*(3)+1)
-if (paper == sys){
-document.getElementById("display").innerHTML = "Paper"
-document.getElementById("display").style.backgroundColor = "rgb(128, 128, 204)";
-document.getElementById("rt").style.backgroundColor = "white";
-document.getElementById("result").innerHTML = "Try Again"
-} else if (sys > paper){
-document.getElementById("display").innerHTML = "Sizeer"
-document.getElementById("display").style.backgroundColor = "rgb(0, 255, 85)";
-document.getElementById("rt").style.backgroundColor = "red";
-document.getElementById("result").innerHTML = "System Win"
-} else {
-document.getElementById("display").innerHTML = "Stone"
-document.getElementById("display").style.backgroundColor = "rgb(225, 255, 0)";
-document.getElementById("rt").style.backgroundColor = "green";
-document.getElementById("result").innerHTML = "You Win"
-}
-}
-function sizeer(){
-var sizeer = 3
-var sys = Math.floor(Math.random()*(3)+1)
-if (sizeer == sys){
-document.getElementById("display").innerHTML = "Sizeer"
-document.getElementById("display").style.backgroundColor = "rgb(0, 255, 85)";
-document.getElementById("rt").style.backgroundColor = "white";
-document.getElementById("result").innerHTML = "Try Again"
-} else if (sys < sizeer && sys > 1){
-document.getElementById("display").innerHTML = "Paper"
-document.getElementById("display").style.backgroundColor = "rgb(128, 128, 204)";
-document.getElementById("rt").style.backgroundColor = "green";
-document.getElementById("result").innerHTML = "You Win"
-} else {
-document.getElementById("display").innerHTML = "Stone"
-document.getElementById("display").style.backgroundColor = "rgb(225, 255, 0)";
-document.getElementById("rt").style.backgroundColor = "red";
-document.getElementById("result").innerHTML = "System Win"
-} 
-}
-    
-</script>
-
+  <body>
+    <div class="bx">
+      <p id="display">Play</p>
+      <h2 id="rt">Result : <span id="result">?</span></h2>
+      <button id="st" onclick="stone()">Stone</button>
+      <button id="pp" onclick="paper()">Paper</button>
+      <button id="sz" onclick="sizeer()">Sizeer</button>
+    </div>
+  </body>
+  <script>
+    function stone() {
+      var stone = 1;
+      var sys = Math.floor(Math.random() * 3 + 1);
+      if (stone == sys) {
+        document.getElementById("display").innerHTML = "Stone";
+        document.getElementById("display").style.backgroundColor =
+          "rgb(225, 255, 0)";
+        document.getElementById("rt").style.backgroundColor = "white";
+        document.getElementById("result").innerHTML = "Try Again";
+      } else if (sys > stone && sys < 3) {
+        document.getElementById("display").innerHTML = "Paper";
+        document.getElementById("display").style.backgroundColor =
+          "rgb(128, 128, 204)";
+        document.getElementById("rt").style.backgroundColor = "red";
+        document.getElementById("result").innerHTML = "System Win";
+      } else {
+        document.getElementById("display").innerHTML = "Sizeer";
+        document.getElementById("display").style.backgroundColor =
+          "rgb(0, 255, 85)";
+        document.getElementById("rt").style.backgroundColor = "green";
+        document.getElementById("result").innerHTML = "You Win";
+      }
+    }
+    function paper() {
+      var paper = 2;
+      var sys = Math.floor(Math.random() * 3 + 1);
+      if (paper == sys) {
+        document.getElementById("display").innerHTML = "Paper";
+        document.getElementById("display").style.backgroundColor =
+          "rgb(128, 128, 204)";
+        document.getElementById("rt").style.backgroundColor = "white";
+        document.getElementById("result").innerHTML = "Try Again";
+      } else if (sys > paper) {
+        document.getElementById("display").innerHTML = "Sizeer";
+        document.getElementById("display").style.backgroundColor =
+          "rgb(0, 255, 85)";
+        document.getElementById("rt").style.backgroundColor = "red";
+        document.getElementById("result").innerHTML = "System Win";
+      } else {
+        document.getElementById("display").innerHTML = "Stone";
+        document.getElementById("display").style.backgroundColor =
+          "rgb(225, 255, 0)";
+        document.getElementById("rt").style.backgroundColor = "green";
+        document.getElementById("result").innerHTML = "You Win";
+      }
+    }
+    function sizeer() {
+      var sizeer = 3;
+      var sys = Math.floor(Math.random() * 3 + 1);
+      if (sizeer == sys) {
+        document.getElementById("display").innerHTML = "Sizeer";
+        document.getElementById("display").style.backgroundColor =
+          "rgb(0, 255, 85)";
+        document.getElementById("rt").style.backgroundColor = "white";
+        document.getElementById("result").innerHTML = "Try Again";
+      } else if (sys < sizeer && sys > 1) {
+        document.getElementById("display").innerHTML = "Paper";
+        document.getElementById("display").style.backgroundColor =
+          "rgb(128, 128, 204)";
+        document.getElementById("rt").style.backgroundColor = "green";
+        document.getElementById("result").innerHTML = "You Win";
+      } else {
+        document.getElementById("display").innerHTML = "Stone";
+        document.getElementById("display").style.backgroundColor =
+          "rgb(225, 255, 0)";
+        document.getElementById("rt").style.backgroundColor = "red";
+        document.getElementById("result").innerHTML = "System Win";
+      }
+    }
+  </script>
 </html>

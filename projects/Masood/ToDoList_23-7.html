@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+
+  <body>
+    Enter Today's Task : <input id="myNewToDo" />
+    <br />
+    <br />
+    <button onclick="save()">Show my To Dos</button>
+    <br /><br />
+    <div id="myList"></div>
+
+    <script>
+      function save() {
+        var newTask = document.getElementById("myNewToDo").value;
+        var oldTask = localStorage.getItem("myNewToDo");
+        if (oldTask) {
+          var allTask = oldTask + newTask + "<br>";
+          localStorage.setItem("myNewToDo", allTask);
+          document.getElementById("myList").innerHTML = allTask;
+        } else {
+          var allTask = newTask + "<br>";
+          localStorage.setItem("myNewToDo", allTask);
+          document.getElementById("myList").innerHTML = allTask;
+        }
+      }
+
+      var data = localStorage.getItem("myNewToDo");
+      if (data) {
+        var count = localStorage.getItem("myNewToDo");
+        document.getElementById("myList").innerHTML = count;
+      } else {
+        document.getElementById("myList").innerHTML =
+          "No Pending Tasks. Good Job!";
+      }
+    </script>
+  </body>
+</html>

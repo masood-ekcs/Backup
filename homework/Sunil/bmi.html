@@ -1,51 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
+  </head>
 
-<body>
-<!--weight in kg  devide height in meater square--> 
-   <label>Weight</label>
-   <input id="weight" type="text"/><br>
-   <label>Height</label>
-   <input id="height" type="text"/>
-   <button onclick="bmi()">Submit</button><br><br>
+  <body>
+    <!--weight in kg  devide height in meater square-->
+    <label>Weight</label>
+    <input id="weight" type="text" /><br />
+    <label>Height</label>
+    <input id="height" type="text" />
+    <button onclick="bmi()">Submit</button><br /><br />
 
-   <h3>Your BMI is: <span id="output">?</span></h3>
- 
-</body>
-<script>
-    function bmi(){
-   var wt = parseInt(document.getElementById("weight").value)     
-   var ht = parseInt(document.getElementById("height").value) 
-   var bmi = wt / (ht*ht)
-   
-if (bmi < 18.5){
-    document.getElementById("output").innerText= "Below Normal Weight";
-}
-else if (bmi >= 18.5 & bmi < 25){
-    document.getElementById("output").innerText= "Normal Weight"
-}
-else if (bmi >= 25 & bmi < 30){
-    document.getElementById("output").innerText= "Over Weight"
-}
-else if (bmi >= 30 & bmi < 35){
-    document.getElementById("output").innerText= "Class I Obesity"
-}
-else if (bmi >= 35 & bmi < 40){
-    document.getElementById("output").innerText= "Class II Obesity"
-}
-else if(bmi > 40){
-    document.getElementById("output").innerText="Class III Obesity"
-}
+    <h3>Your BMI is: <span id="output">?</span></h3>
+  </body>
+  <script>
+    function bmi() {
+      var wt = parseInt(document.getElementById("weight").value);
+      var ht = parseInt(document.getElementById("height").value);
+      var bmi = wt / (ht * ht);
 
-}
-
-</script>
-
+      if (bmi < 18.5) {
+        document.getElementById("output").innerText = "Below Normal Weight";
+      } else if ((bmi >= 18.5) & (bmi < 25)) {
+        document.getElementById("output").innerText = "Normal Weight";
+      } else if ((bmi >= 25) & (bmi < 30)) {
+        document.getElementById("output").innerText = "Over Weight";
+      } else if ((bmi >= 30) & (bmi < 35)) {
+        document.getElementById("output").innerText = "Class I Obesity";
+      } else if ((bmi >= 35) & (bmi < 40)) {
+        document.getElementById("output").innerText = "Class II Obesity";
+      } else if (bmi > 40) {
+        document.getElementById("output").innerText = "Class III Obesity";
+      }
+    }
+  </script>
 </html>

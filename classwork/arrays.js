@@ -1,9 +1,5 @@
-
-
-
 //var students = [1,2,3,4,5, "Ayush", true, ["Ayush", "Addhyan"], {name: "Ayush", age: 22}] // We can access any element using 0 based index.
 //console.log(students[8].age)
-
 
 //Array Methods
 
@@ -33,45 +29,32 @@ var resultString = resultArray.join("")
 console.log(resultString)   //Join method is used to create a string from an array
 */
 
-// Comparision function 
-function cmp(a, b)
-{
-    if(a>b)   //For descending order a<b
-    return 1
-    else
-    return -1
-} 
+// Comparision function
+function cmp(a, b) {
+  if (a > b)
+    //For descending order a<b
+    return 1;
+  else return -1;
+}
 
-var arr = [3,2,215,54,1,100]
-arr.sort(cmp)
-console.log(arr)
+var arr = [3, 2, 215, 54, 1, 100];
+arr.sort(cmp);
+console.log(arr);
 // Drawback of default sort method - It sorts based on dictionary string value
 
+var given_string = "ayush"; // ahusy
+var check_string = "yuqah"; // ahusy
 
-
-
-var given_string = "ayush"   // ahusy
-var check_string = "yuqah"    // ahusy
-
-
-var result1 = given_string.split("").sort().join("")
+var result1 = given_string.split("").sort().join("");
 /*
 var arr1 = given_string.split("")
 arr1.sort()
 var result1 = arr1.join("")
 
 */
-var result2 = check_string.split("").sort().join("")
-if(result1==result2)
-{
-    console.log("Yay, they're anagrams")
+var result2 = check_string.split("").sort().join("");
+if (result1 == result2) {
+  console.log("Yay, they're anagrams");
+} else {
+  console.log("No, they are not anagrams");
 }
-else
-{
-    console.log("No, they are not anagrams")
-}
-
-
-
-
-

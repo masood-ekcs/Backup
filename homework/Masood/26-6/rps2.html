@@ -1,73 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>RPS Game</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <h2>Rock Paper Scissor</h2>
-    <br>
+    <br />
     <button onclick="play()">Click to Win!</button>
-    <br>
-    <br>
-    <div id="myResult"></div><br>
+    <br />
+    <br />
+    <div id="myResult"></div>
+    <br />
     <div id="myPrint"></div>
     <div id="computerPrint"></div>
 
     <script>
-        // 1 = Rock
-        // 2 = Paper
-        // 3 = Scissor
+      // 1 = Rock
+      // 2 = Paper
+      // 3 = Scissor
 
-        function play() {
-            var computerChoice = parseInt(Math.floor(Math.random() * (3 - 1 + 1)) + 1);
-            var myChoice = parseInt(Math.floor(Math.random() * (3 - 1 + 1)) + 1);
-            console.log(computerChoice);
-            console.log(myChoice);
+      function play() {
+        var computerChoice = parseInt(
+          Math.floor(Math.random() * (3 - 1 + 1)) + 1
+        );
+        var myChoice = parseInt(Math.floor(Math.random() * (3 - 1 + 1)) + 1);
+        console.log(computerChoice);
+        console.log(myChoice);
 
-            if (computerChoice == myChoice) {
-                document.getElementById("myResult").innerHTML = "<b>Draw!</b>"
-                document.getElementById("computerPrint").innerHTML = "<i>Your choices are the same, play again!</i>"
-                document.getElementById("myPrint").innerHTML = ""
-            }
-            else if (computerChoice == 1 && myChoice == 2) {
-                document.getElementById("myResult").innerHTML = "<b>You won!</b>"
-                document.getElementById("computerPrint").innerHTML = "Computer Choose <b style='color:red'> Rock"
-                document.getElementById("myPrint").innerHTML = "You Choose <b style='color:red'> Paper"
-            }
-            else if (computerChoice == 1 && myChoice == 3) {
-                document.getElementById("myResult").innerHTML = "<b>Computer won!</b>"
-                document.getElementById("computerPrint").innerHTML = "Computer Choose <b style='color:red'> Rock"
-                document.getElementById("myPrint").innerHTML = "You Choose <b style='color:red'> Scissor"
-            }
-            else if (computerChoice == 2 && myChoice == 1) {
-                document.getElementById("myResult").innerHTML = "<b>Computer won!</b>"
-                document.getElementById("computerPrint").innerHTML = "Computer Choose <b style='color:red'> Paper"
-                document.getElementById("myPrint").innerHTML = "You Choose <b style='color:red'> Rock"
-            }
-            else if (computerChoice == 2 && myChoice == 3) {
-                document.getElementById("myResult").innerHTML = "<b>You won!</b>"
-                document.getElementById("computerPrint").innerHTML = "Computer Choose <b style='color:red'> Paper"
-                document.getElementById("myPrint").innerHTML = "You Choose <b style='color:red'> Scissor"
-            }
-            else if (computerChoice == 3 && myChoice == 1) {
-                document.getElementById("myResult").innerHTML = "<b>You won!</b>"
-                document.getElementById("computerPrint").innerHTML = "Computer Choose <b style='color:red'> Scissor"
-                document.getElementById("myPrint").innerHTML = "You Choose <b style='color:red'> Rock"
-            }
-            else if (computerChoice == 3 && myChoice == 2) {
-                document.getElementById("myResult").innerHTML = "<b>Computer won!</b>"
-                document.getElementById("computerPrint").innerHTML = "Computer Choose <b style='color:red'> Scissor"
-                document.getElementById("myPrint").innerHTML = "You Choose <b style='color:red'> Paper"
-            }
-
+        if (computerChoice == myChoice) {
+          document.getElementById("myResult").innerHTML = "<b>Draw!</b>";
+          document.getElementById("computerPrint").innerHTML =
+            "<i>Your choices are the same, play again!</i>";
+          document.getElementById("myPrint").innerHTML = "";
+        } else if (computerChoice == 1 && myChoice == 2) {
+          document.getElementById("myResult").innerHTML = "<b>You won!</b>";
+          document.getElementById("computerPrint").innerHTML =
+            "Computer Choose <b style='color:red'> Rock";
+          document.getElementById("myPrint").innerHTML =
+            "You Choose <b style='color:red'> Paper";
+        } else if (computerChoice == 1 && myChoice == 3) {
+          document.getElementById("myResult").innerHTML =
+            "<b>Computer won!</b>";
+          document.getElementById("computerPrint").innerHTML =
+            "Computer Choose <b style='color:red'> Rock";
+          document.getElementById("myPrint").innerHTML =
+            "You Choose <b style='color:red'> Scissor";
+        } else if (computerChoice == 2 && myChoice == 1) {
+          document.getElementById("myResult").innerHTML =
+            "<b>Computer won!</b>";
+          document.getElementById("computerPrint").innerHTML =
+            "Computer Choose <b style='color:red'> Paper";
+          document.getElementById("myPrint").innerHTML =
+            "You Choose <b style='color:red'> Rock";
+        } else if (computerChoice == 2 && myChoice == 3) {
+          document.getElementById("myResult").innerHTML = "<b>You won!</b>";
+          document.getElementById("computerPrint").innerHTML =
+            "Computer Choose <b style='color:red'> Paper";
+          document.getElementById("myPrint").innerHTML =
+            "You Choose <b style='color:red'> Scissor";
+        } else if (computerChoice == 3 && myChoice == 1) {
+          document.getElementById("myResult").innerHTML = "<b>You won!</b>";
+          document.getElementById("computerPrint").innerHTML =
+            "Computer Choose <b style='color:red'> Scissor";
+          document.getElementById("myPrint").innerHTML =
+            "You Choose <b style='color:red'> Rock";
+        } else if (computerChoice == 3 && myChoice == 2) {
+          document.getElementById("myResult").innerHTML =
+            "<b>Computer won!</b>";
+          document.getElementById("computerPrint").innerHTML =
+            "Computer Choose <b style='color:red'> Scissor";
+          document.getElementById("myPrint").innerHTML =
+            "You Choose <b style='color:red'> Paper";
         }
-
+      }
     </script>
-</body>
-
+  </body>
 </html>

@@ -8,7 +8,6 @@ console.log(students)
 
 */
 
-
 /*
 // Objects
 
@@ -18,7 +17,3 @@ console.log(masood.marks[2])
 
 
 */
-
-
-
-

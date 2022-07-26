@@ -24,7 +24,6 @@ for (var i = 100; i < 1000; i++) {
     }
 } */
 
-
 /*
 // Check if the number is prime 
 var num = 97

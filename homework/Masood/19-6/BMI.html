@@ -1,63 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>BMI</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <h3>Body Mass Index Interpretation</h3>
-    Enter your Weight in KG : <br><input id="kg">
-    <br>
-    Enter your Height in Meter : <br><input id="meter">
-    <br><br>
+    Enter your Weight in KG : <br /><input id="kg" />
+    <br />
+    Enter your Height in Meter : <br /><input id="meter" /> <br /><br />
     <button onclick="calculate()">Calculate BMI</button>
-    <br>
-    <br>
+    <br />
+    <br />
 
-    Hello<div id="calc" style="display:inline"></div>
+    Hello
+    <div id="calc" style="display: inline"></div>
     <div id="print"></div>
 
     <script>
-        function calculate() {
-            var kg1 = document.getElementById("kg").value
-            var meter1 = document.getElementById("meter").value
-            var k1 = parseFloat(kg1)
-            var m1 = parseFloat(meter1)
-            var bmi = k1 / (m1 * m1)
+      function calculate() {
+        var kg1 = document.getElementById("kg").value;
+        var meter1 = document.getElementById("meter").value;
+        var k1 = parseFloat(kg1);
+        var m1 = parseFloat(meter1);
+        var bmi = k1 / (m1 * m1);
 
-            document.getElementById("calc").innerHTML = "Your BMI is : <b style='color:white; background-color:green'>" + bmi + "</b>"
+        document.getElementById("calc").innerHTML =
+          "Your BMI is : <b style='color:white; background-color:green'>" +
+          bmi +
+          "</b>";
 
-            if (bmi < 18.5) {
-                document.getElementById("print").innerHTML = "You are <b>Below Normal Weight</b>"
-                //     alert("You are Below Normal Weight")
-            }
-            else if (bmi >= 18.5 && bmi < 25) {
-                document.getElementById("print").innerHTML = "You are Normal Weight"
-                //console.log("You are Normal Weight")
-            }
-            else if (bmi >= 25 && bmi < 30) {
-                document.getElementById("print").innerHTML = "You are Overweight"
-            }
-            else if (bmi >= 30 && bmi < 35) {
-                document.getElementById("print").innerHTML = "You are Class I Obesity"
-            }
-            else if (bmi >= 35 && bmi < 40) {
-                document.getElementById("print").innerHTML = "You are Class II Obesity"
-            }
-            else if (bmi >= 40) {
-                document.getElementById("print").innerHTML = "You are Class III Obesity <br> <i> bhai kuchh mehnat kar le </i>"
-            }
-            else {
-                document.getElementById("print").innerHTML = "<i>You have not entered the details!</i>"
-            }
-
+        if (bmi < 18.5) {
+          document.getElementById("print").innerHTML =
+            "You are <b>Below Normal Weight</b>";
+          //     alert("You are Below Normal Weight")
+        } else if (bmi >= 18.5 && bmi < 25) {
+          document.getElementById("print").innerHTML = "You are Normal Weight";
+          //console.log("You are Normal Weight")
+        } else if (bmi >= 25 && bmi < 30) {
+          document.getElementById("print").innerHTML = "You are Overweight";
+        } else if (bmi >= 30 && bmi < 35) {
+          document.getElementById("print").innerHTML =
+            "You are Class I Obesity";
+        } else if (bmi >= 35 && bmi < 40) {
+          document.getElementById("print").innerHTML =
+            "You are Class II Obesity";
+        } else if (bmi >= 40) {
+          document.getElementById("print").innerHTML =
+            "You are Class III Obesity <br> <i> bhai kuchh mehnat kar le </i>";
+        } else {
+          document.getElementById("print").innerHTML =
+            "<i>You have not entered the details!</i>";
         }
-
+      }
     </script>
-</body>
-
+  </body>
 </html>

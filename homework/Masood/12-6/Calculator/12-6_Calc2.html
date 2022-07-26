@@ -1,51 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Simple Calculator2</title>
-</head>
+  </head>
 
-<body>
-    <input id="num1">
-    <br>
-    <input id="num2">
-    <br><br>
+  <body>
+    <input id="num1" />
+    <br />
+    <input id="num2" />
+    <br /><br />
     <button onclick="add()">+</button>
     <button onclick="sub()">-</button>
     <button onclick="mul()">x</button>
     <button onclick="divide()">/</button>
 
     <script>
+      var number1 = document.getElementById("num1").value;
+      var number2 = document.getElementById("num2").value;
+      var n1 = parseInt(number1);
+      var n2 = parseInt(number2);
 
-        var number1 = document.getElementById("num1").value
-        var number2 = document.getElementById("num2").value
-        var n1 = parseInt(number1)
-        var n2 = parseInt(number2)
+      function add() {
+        var result = n1 + n2;
+        document.write("The Addition value is : " + result);
+      }
 
-        function add() {
-            var result = n1 + n2
-            document.write("The Addition value is : " + result)
-        }
+      function sub() {
+        var result = n1 - n2;
+        document.write("The Subtracted value is : " + result);
+      }
 
-        function sub() {
-            var result = n1 - n2
-            document.write("The Subtracted value is : " + result)
-        }
+      function mul() {
+        var result = n1 * n2;
+        document.write("The Multiplied value is : " + result);
+      }
 
-        function mul() {
-            var result = n1 * n2
-            document.write("The Multiplied value is : " + result)
-        }
-
-        function divide() {
-            var result = n1 / n2
-            document.write("The Division value is : " + result)
-        }
-
+      function divide() {
+        var result = n1 / n2;
+        document.write("The Division value is : " + result);
+      }
     </script>
-</body>
-
+  </body>
 </html>

@@ -1,15 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Count All Vowels</title>
-</head>
+  </head>
 
-<body>
-    <input type="text" id="inputtext1"><button onclick="count1()">Count Vowels</button><br><br>
+  <body>
+    <input type="text" id="inputtext1" /><button onclick="count1()">
+      Count Vowels</button
+    ><br /><br />
     <div id="countA"></div>
     <div id="countE"></div>
     <div id="countI"></div>
@@ -17,66 +18,63 @@
     <div id="countU"></div>
     <div id="countALL"></div>
     <script>
-        //function to count Word count from the input field.
-        function count1() {
-            var x = document.getElementById("inputtext1").value
+      //function to count Word count from the input field.
+      function count1() {
+        var x = document.getElementById("inputtext1").value;
 
-            //count vowel - a
-            var xlac = x.split("a")
-            var xuac = x.split("A")
-            var xlal = xlac.length - 1
-            var xual = xuac.length - 1
-            var xal = xlal + xual
-            var xaln = parseFloat(xal)
+        //count vowel - a
+        var xlac = x.split("a");
+        var xuac = x.split("A");
+        var xlal = xlac.length - 1;
+        var xual = xuac.length - 1;
+        var xal = xlal + xual;
+        var xaln = parseFloat(xal);
 
-            //count vowel - e
-            var xlec = x.split("e")
-            var xuec = x.split("E")
-            var xlel = xlec.length - 1
-            var xuel = xuec.length - 1
-            var xel = xlel + xuel
-            var xeln = parseFloat(xel)
+        //count vowel - e
+        var xlec = x.split("e");
+        var xuec = x.split("E");
+        var xlel = xlec.length - 1;
+        var xuel = xuec.length - 1;
+        var xel = xlel + xuel;
+        var xeln = parseFloat(xel);
 
-            //count vowel - i
-            var xlic = x.split("i")
-            var xuic = x.split("I")
-            var xlil = xlic.length - 1
-            var xuil = xuic.length - 1
-            var xil = xlil + xuil
-            var xiln = parseFloat(xil)
+        //count vowel - i
+        var xlic = x.split("i");
+        var xuic = x.split("I");
+        var xlil = xlic.length - 1;
+        var xuil = xuic.length - 1;
+        var xil = xlil + xuil;
+        var xiln = parseFloat(xil);
 
-            //count vowel - o
-            var xloc = x.split("o")
-            var xuoc = x.split("O")
-            var xlol = xloc.length - 1
-            var xuol = xuoc.length - 1
-            var xol = xlol + xuol
-            var xoln = parseFloat(xol)
+        //count vowel - o
+        var xloc = x.split("o");
+        var xuoc = x.split("O");
+        var xlol = xloc.length - 1;
+        var xuol = xuoc.length - 1;
+        var xol = xlol + xuol;
+        var xoln = parseFloat(xol);
 
-            //count vowel - u
-            var xluc = x.split("u")
-            var xuuc = x.split("U")
-            var xlul = xluc.length - 1
-            var xuul = xuuc.length - 1
-            var xul = xlul + xuul
-            var xuln = parseFloat(xul)
+        //count vowel - u
+        var xluc = x.split("u");
+        var xuuc = x.split("U");
+        var xlul = xluc.length - 1;
+        var xuul = xuuc.length - 1;
+        var xul = xlul + xuul;
+        var xuln = parseFloat(xul);
 
-            var totalVowel = xaln + xeln + xiln + xoln + xuln
-            console.log(totalVowel)
+        var totalVowel = xaln + xeln + xiln + xoln + xuln;
+        console.log(totalVowel);
 
-            //
-            document.getElementById("countA").innerHTML = "Total A's : " + xaln
-            document.getElementById("countE").innerHTML = "Total E's : " + xeln
-            document.getElementById("countI").innerHTML = "Total I's : " + xiln
-            document.getElementById("countO").innerHTML = "Total O's : " + xoln
-            document.getElementById("countU").innerHTML = "Total U's : " + xuln
-            //
-            document.getElementById("countALL").innerHTML = "<br>Total Vowels in the String : " + totalVowel
-
-        }
-
-
+        //
+        document.getElementById("countA").innerHTML = "Total A's : " + xaln;
+        document.getElementById("countE").innerHTML = "Total E's : " + xeln;
+        document.getElementById("countI").innerHTML = "Total I's : " + xiln;
+        document.getElementById("countO").innerHTML = "Total O's : " + xoln;
+        document.getElementById("countU").innerHTML = "Total U's : " + xuln;
+        //
+        document.getElementById("countALL").innerHTML =
+          "<br>Total Vowels in the String : " + totalVowel;
+      }
     </script>
-</body>
-
+  </body>
 </html>

@@ -11,8 +11,6 @@ var i = 1;
 //     i++;
 //   }
 
-
-
 // var n = 10
 
 // for(var i=0; i<n; i++)
@@ -22,30 +20,25 @@ var i = 1;
 //         {
 //            temp += "*"
 //         }
-    
+
 //       console.log(temp);
-       
+
 //   }
 //Repeat function only string value repeat
-var n = 10
+var n = 10;
 
-for(var i=0; i<n; i++)
-  {
-    var temp = "*";
-    var k = temp.repeat(10);
-    console.log(k);
-  }
-
-  var num = 216
-var isInteger = Number.isInteger(Math.sqrt(216)) // Method to check wheather a number is integer or not. 
-
-var sqrt = Math.sqrt(num)
-if(Math.floor(sqrt)==sqrt)
-{
-  console.log(num, "is a perfect sqauare");
+for (var i = 0; i < n; i++) {
+  var temp = "*";
+  var k = temp.repeat(10);
+  console.log(k);
 }
-else
-{
+
+var num = 216;
+var isInteger = Number.isInteger(Math.sqrt(216)); // Method to check wheather a number is integer or not.
+
+var sqrt = Math.sqrt(num);
+if (Math.floor(sqrt) == sqrt) {
+  console.log(num, "is a perfect sqauare");
+} else {
   console.log("Not a perfect square");
 }
-

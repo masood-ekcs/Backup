@@ -1,36 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Enter Marks</title>
-</head>
+  </head>
 
-<body>
+  <body>
+    <label>Enter Marks</label>100 / <input id="mark" type="text" /><br />
 
-   <label>Enter Marks</label>100 / <input id="mark" type="text"/><br>
-   
-   <button onclick="cal()">Submit</button><br><br>
+    <button onclick="cal()">Submit</button><br /><br />
 
-   <h3>Grade : <span id="output">?</span></h3>
- 
-</body>
-<script>
-    function cal(){
-   var mk = Number(document.getElementById("mark").value)     
-      
-   if (mk > 90){ document.getElementById("output").innerText= "AA";}
-else if (mk > 80 & mk <= 90){document.getElementById("output").innerText= "AB"}
-else if (mk > 70 & mk <= 80){document.getElementById("output").innerText= "BB"}
-else if (mk > 60 & mk <= 70){document.getElementById("output").innerText= "BC"}
-else if (mk > 50 & mk <= 60){document.getElementById("output").innerText= "CC"}
-else if (mk > 40 & mk <= 50){document.getElementById("output").innerText= "CD"}
-else if (mk > 30 & mk <= 40){document.getElementById("output").innerText= "DD"}
-else if (mk <= 30){document.getElementById("output").innerText= "FF"}
+    <h3>Grade : <span id="output">?</span></h3>
+  </body>
+  <script>
+    function cal() {
+      var mk = Number(document.getElementById("mark").value);
+
+      if (mk > 90) {
+        document.getElementById("output").innerText = "AA";
+      } else if ((mk > 80) & (mk <= 90)) {
+        document.getElementById("output").innerText = "AB";
+      } else if ((mk > 70) & (mk <= 80)) {
+        document.getElementById("output").innerText = "BB";
+      } else if ((mk > 60) & (mk <= 70)) {
+        document.getElementById("output").innerText = "BC";
+      } else if ((mk > 50) & (mk <= 60)) {
+        document.getElementById("output").innerText = "CC";
+      } else if ((mk > 40) & (mk <= 50)) {
+        document.getElementById("output").innerText = "CD";
+      } else if ((mk > 30) & (mk <= 40)) {
+        document.getElementById("output").innerText = "DD";
+      } else if (mk <= 30) {
+        document.getElementById("output").innerText = "FF";
+      }
     }
-
-</script>
-
+  </script>
 </html>

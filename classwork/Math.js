@@ -19,10 +19,8 @@ console.log(Math.min(2,4,1,6,10)) //Returns minimum value
 
 */
 
-
-
-//console.log(Math.random())  // Range is from 0-0.999999999999 
-//Random number between 0-9.9999999 
+//console.log(Math.random())  // Range is from 0-0.999999999999
+//Random number between 0-9.9999999
 //console.log(Math.floor(Math.random()*41))
 
 /*
@@ -32,8 +30,5 @@ console.log(Math.min(2,4,1,6,10)) //Returns minimum value
 
 //Formula to find a random number between max and min number both inclusive
 //Math.floor(Math.random() * (max - min + 1)) + min
-var randBetween = Math.floor(Math.random() * (30 - 10 + 1)) + 10
-console.log(randBetween)
-
-
-
+var randBetween = Math.floor(Math.random() * (30 - 10 + 1)) + 10;
+console.log(randBetween);

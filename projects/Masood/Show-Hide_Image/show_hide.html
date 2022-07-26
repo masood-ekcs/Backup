@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Show or Hide an Image</title>
+  </head>
+
+  <body>
+    <button onclick="hide()">HIDE</button>
+    <button onclick="show()">SHOW</button><br />
+    <img src="eclairs.jpg" id="myImage" width="450px" ; height="auto" /><br />
+
+    <script>
+      function hide() {
+        //document.getElementById("myImage").src = ""
+        document.getElementById("myImage").style.display = "none";
+      }
+      function show() {
+        //document.getElementById("myImage").src = "eclairs.jpg"
+        document.getElementById("myImage").style.display = ""; //or "inline", default is inline
+      }
+    </script>
+  </body>
+</html>

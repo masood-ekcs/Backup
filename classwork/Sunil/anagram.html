@@ -1,39 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
+  </head>
 
-<body>
-  
-    <input id="st1" type="text"/>
-    <input id="st2" type="text"/>
-   <button onclick="cmp()">Submit</button>
-<p id="pr"> </p>
+  <body>
+    <input id="st1" type="text" />
+    <input id="st2" type="text" />
+    <button onclick="cmp()">Submit</button>
+    <p id="pr"></p>
+  </body>
+  <script>
+    function cmp() {
+      var st1 = document.getElementById("st1").value;
+      var st2 = document.getElementById("st2").value;
 
-</body>
-<script>
+      var result1 = st1.split("").sort().join("");
+      var result2 = st2.split("").sort().join("");
 
-function cmp(){
-    var st1 = document.getElementById("st1").value
-var st2 = document.getElementById("st2").value
-
-    var result1 = st1.split("").sort().join("")
-var result2 = st2.split("").sort().join("")    
-    
-if (result1 == result2){
-    document.getElementById("pr").innerHTML = "True"
-}
-else {
-    document.getElementById("pr").innerHTML = "False"
-}
-
-}
-
-</script>
-
+      if (result1 == result2) {
+        document.getElementById("pr").innerHTML = "True";
+      } else {
+        document.getElementById("pr").innerHTML = "False";
+      }
+    }
+  </script>
 </html>

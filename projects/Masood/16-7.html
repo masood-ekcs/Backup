@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Check Values</title>
+  </head>
+
+  <body>
+    <h3>Check values of a given number</h3>
+    Enter a number : <input id="num1" />
+    <br />
+    <button onclick="checkValues()">Check Values</button>
+    <br />
+    <br />
+    <div id="print"></div>
+
+    <script>
+      function checkValues() {
+        var myNumber = parseFloat(document.getElementById("num1").value);
+        var myFloor = Math.floor(myNumber);
+        var myCeil = Math.ceil(myNumber);
+        var myRound = Math.round(myNumber);
+        var myTrunc = Math.trunc(myNumber);
+        var myAbs = Math.abs(myNumber);
+        document.getElementById("print").innerHTML +=
+          "Floor = " + myFloor + "<br>";
+        document.getElementById("print").innerHTML +=
+          "Ceil = " + myCeil + "<br>";
+        document.getElementById("print").innerHTML +=
+          "Round = " + myRound + "<br>";
+        document.getElementById("print").innerHTML +=
+          "Trunc = " + myTrunc + "<br>";
+        document.getElementById("print").innerHTML += "Abs = " + myAbs + "<br>";
+      }
+    </script>
+  </body>
+</html>

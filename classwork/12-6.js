@@ -59,13 +59,8 @@ else
 
 */
 
-var a = "Ayush"
-var b = "male"
+var a = "Ayush";
+var b = "male";
 
 if (a == "Ayush" && b == "male") {
-
-
 }
-
-
-

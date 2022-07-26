@@ -1,17 +1,15 @@
 // Print even numbers from 100 to 999
 
-
 // var i = 100;
 
-
 // while(i<=999)
-//   {   
+//   {
 //     if(i%2==0)
 //     {
 //       console.log(i);
 //     }
 //     i++;
-   
+
 //   }
 
 // Find whether a given number is prime or not using while loop
@@ -31,7 +29,7 @@
 // {
 //   console.log("Prime Number")
 // }
-// else 
+// else
 // {
 //   console.log("Composite Number")
 // }
